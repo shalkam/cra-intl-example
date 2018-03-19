@@ -13,10 +13,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "extract:messages": "react-intl-cra 'src/**/*.{js,jsx}' -o 'src/i18n/messages/messages.json'",
     "manage:translations": "node ./translationRunner.js"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "react-intl-cra": "^0.3.3",
     "react-intl-translations-manager": "^5.0.1"
   }
