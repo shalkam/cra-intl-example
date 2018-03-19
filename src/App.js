@@ -28,9 +28,9 @@ class App extends Component {
         <div className="App" style={{direction: locale ==="ar"? "rtl": "ltr"}}>
           <header className="App-header">
             <div className="languages">
-              <a href="/?locale=ar">العربية</a>
-              <a href="/?locale=en">English</a>
-              <a href="/?locale=es">Español</a>
+              <a href="?locale=ar">العربية</a>
+              <a href="?locale=en">English</a>
+              <a href="?locale=es">Español</a>
             </div>
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">{formatMessage(messages.title)}</h1>
