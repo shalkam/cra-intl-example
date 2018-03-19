@@ -23,9 +23,9 @@ const messages = defineMessages({
 
 class App extends Component {
   render() {
-    const {intl:{formatMessage}} = this.props;
+    const { intl: { formatMessage,locale } } = this.props;
     return (
-        <div className="App">
+        <div className="App" style={{direction: locale ==="ar"? "rtl": "ltr"}}>
           <header className="App-header">
             <div className="languages">
               <a href="/?locale=ar">العربية</a>
